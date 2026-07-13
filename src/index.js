@@ -30,13 +30,14 @@ for (const entry of orderedData) {
 }
 
 const html = `
+<!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <ul>
+    <table>
         ${templates}
-    </ul>
+    </table>
 </body>
 `
 

@@ -6,7 +6,7 @@ export default function quickSort(arr) {
     let leftArr = [];
     let rightArr = [];
     for(let i = 0; i < arr.length - 1; i++) {
-        if(arr[i][0] < pivot) {
+        if(arr[i][0].toLowerCase() < pivot.toLowerCase()) {
             leftArr.push(arr[i]);
             
         }

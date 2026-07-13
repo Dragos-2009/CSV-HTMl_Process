@@ -1,4 +1,4 @@
-export function quickSort(arr) {
+export default function quickSort(arr) {
     if(arr.length <= 1) {
         return arr;
     }

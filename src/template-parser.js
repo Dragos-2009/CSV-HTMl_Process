@@ -15,7 +15,7 @@ function templateParser(data, templatePath) {
     });
 
     for (const item of data) {
-        template = template.replace(new RegExp(item[0], "g"), item[1]);
+        template = template.replace(new RegExp(`%%${item[0]}%%`, "g"), item[1]);
     }
 
     return template;

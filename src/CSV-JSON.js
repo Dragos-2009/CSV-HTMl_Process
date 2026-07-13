@@ -9,8 +9,8 @@ fs.createReadStream(address)
   .pipe(csv())
   .on('data', (data) => dataJson.push(data))
   .on('end', () => {
-    console.log(dataJson);
+    return dataJson;
     
   });
-  return dataJson;
+  
 }

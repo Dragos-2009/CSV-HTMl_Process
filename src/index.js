@@ -6,17 +6,7 @@ import quickSort from "./quickSort.js"
 
 const data = await CSVtoJSON("./data.csv")
 
-let nameArr = [];
-data.forEach((entry, i) => {
-    nameArr.push([entry.Name, i]);
-})
-
-nameArr = [...quickSort(nameArr)];
-
-let orderedData = [];
-nameArr.forEach((entry, i) => {
-    orderedData.push(data[entry[1]])
-})
+const orderedData = quickSort(data);
 
 let templates = "";
 

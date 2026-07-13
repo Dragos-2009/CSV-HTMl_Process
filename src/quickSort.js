@@ -2,19 +2,17 @@ export default function quickSort(arr) {
     if(arr.length <= 1) {
         return arr;
     }
-    let pivot = arr[arr.length-1][0];
+
+    let pivot = arr[0];
     let leftArr = [];
     let rightArr = [];
-    for(let i = 0; i < arr.length - 1; i++) {
-        if(arr[i][0].toLowerCase() < pivot.toLowerCase()) {
+    for (let i = 1; i < arr.length; i++){
+        if(arr[i]["Name"].toLowerCase() < pivot["Name"].toLowerCase()) {
             leftArr.push(arr[i]);
-            
         }
         else {
             rightArr.push(arr[i]);
         }
     }
-    return [...quickSort(leftArr),arr[arr.length-1], ...quickSort(rightArr)];
+    return [...quickSort(leftArr), pivot, ...quickSort(rightArr)];
 }
-
-//Quick sorts first value of each array item

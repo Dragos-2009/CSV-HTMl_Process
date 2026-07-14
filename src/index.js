@@ -15,6 +15,7 @@ const html = `
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
+    //Could use buttons or links, instead of src="url", src=hashthen ID(IDK how to do hash on my keyboard). Already made id of  each title as the letter
     <div id="searchbar"></div>
     <div style="align-items: center; justify-content: center; display: grid;">
         ${templates}

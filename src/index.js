@@ -13,7 +13,7 @@ const sidebarLinks = () => {
     let links = "";
     for (let i = 65; i <= 90; i++) {
         let letter = String.fromCharCode(i);
-        links += `<a href=#${letter} class="btn">${letter}</a>\n`;
+        links += `<li><a href=#${letter} class="btn">${letter}</a></li>\n`;
     }
     return links;
 }
@@ -24,9 +24,9 @@ const html = `
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <div class="searchbar">
+    <ul class="searchbar" style="align-self: center">
         ${sidebarLinks()}
-    </div>
+    </ul>
     <div style="align-items: center; justify-content: center; display: grid;">
         ${brandTemplates}
     </div>

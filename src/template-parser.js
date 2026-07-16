@@ -25,7 +25,7 @@ export default function templateParser(orderedData, templatePath) {
         if (current != prev) {
             letterHeader = `
                 <div class="letterHeader">
-                    <h1 id=/"${current}/">${current}</h1>
+                    <h1 id="${current}">${current}</h1>
                 </div>\n`;
 
             if (index == 0) {

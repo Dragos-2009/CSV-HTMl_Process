@@ -10,7 +10,7 @@ body {
 ul {
   list-style: none;
   overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
+  position: fixed; 
   top: 0;
   right: 0;
   height: 100%;
@@ -26,16 +26,20 @@ ul {
 ul li {
   vertical-align: middle;
   padding: 5px 15px;
-  width: 100%
+  padding-left:0%;
+  padding-right:0%;
+  width: 100%;
   text-align: center;
+  
 }
 
 ul li a {
   display: block;
   color: white;
   text-align: center;
+  font-size: 15px;
   text-decoration: none;
-  width: 100%;
+  width: 7.5vw;
 }
 
 ul li a:hover {

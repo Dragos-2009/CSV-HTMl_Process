@@ -21,25 +21,30 @@ ul {
   background-color: #333333;
   flex-direction: column;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 ul li {
   vertical-align: middle;
-  padding: 5px 15px;
+  padding: 0px 15px;
   padding-left:0%;
   padding-right:0%;
   width: 100%;
   text-align: center;
+  flex: 1;
   
 }
 
 ul li a {
-  display: block;
+  display: flex;
   color: white;
-  text-align: center;
   font-size: 15px;
   text-decoration: none;
-  width: 7.5vw;
+  width: 45px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 ul li a:hover {

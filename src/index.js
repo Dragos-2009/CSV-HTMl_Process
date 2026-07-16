@@ -24,10 +24,10 @@ const html = `
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <ul class="searchbar" style="align-self: center">
+    <ul class="searchbar">
         ${sidebarLinks()}
     </ul>
-    <div style="align-items: center; justify-content: center; display: grid;">
+    <div style="align-items: center; justify-content: center; display: grid; margin-top:20px">
         ${brandTemplates}
     </div>
 </body>

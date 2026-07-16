@@ -12,7 +12,9 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #FFFFFFFF;
+  background-color: #333333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0;
 }
 
 ul li {
